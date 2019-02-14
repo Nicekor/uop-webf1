@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <title>About Me</title>
+  <link href="css/style.css" rel="stylesheet" title="Default" />
+</head>
+
+<body>
+  <nav>
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="uop-logo" /></a>
+    <p class="up-number">UP Number: 876126</p>
+    <ul>
+      <li> <a href="index.html">Home</a> </li>
+      <li class="dropdown">
+        <a href="#">
+          Portfolio <svg class="dropdown-arrow" width=1em height=1em> <image href="images/dropdown-arrow.svg" height="1em" width="1em"/> </svg>
+        </a>
+        <ul class="dropdown-content">
+          <li><a href="portfolio/litreview.html">Literature Review</a></li>
+          <li><a href="portfolio/disclog.html">Discovery Log</a></li>
+        </ul>
+      </li>
+      <li class="active"> <a href="aboutme.html">About Me</a> </li>
+    </ul>
+  </nav>
+
+  <main>
+    <article id="about-me">
+      <p>
+        Hello! I am a Computer Science student and I am in my first year. I am enjoying the course a lot as I had no experience on it before and I am achieving a lot of knowledge. I love gaming and music. The video is going to be displayed in this page! Curiosity:
+        This is my first website :D
+      </p>
+    </article>
+
+    <video controls id="video">
+      <source src="images/vid/obama-video.mp4" type="video/mp4"/>
+      <source src="images/vid/obama-video.ogv" type='video/ogv; codecs="theora, vorbis"'/>
+      <source src="images/vid/obama-video.webm" type='video/webm; codecs="vp8, vorbis"'/>
+      <p>Sorry, your browser doesn't do video.</p>
+    </video>
+  </main>
+
+  <footer>
+    <p>Try other browser and/or validate this page!</p>
+    <figure>
+      <a href="https://www.mozilla.org/en-US/firefox/"><img src="images/firefox.png" alt="firefox-logo" width="32" height="32" /></a>
+      <a href="https://www.google.com/chrome/"><img src="images/chrome.png" alt="chrome-logo" width="32" height="32" /></a>
+      <a href="https://www.opera.com/"><img src="images/opera.png" alt="opera-logo" width="32" height="32" /></a>
+      <a href="https://www.apple.com/safari/"><img src="images/safari.png" alt="safari-logo" width="32" height="32" /></a>
+      <a href="https://www.microsoft.com/en-us/windows/microsoft-edge"><img src="images/microsoft-edge.png" alt="microsoft-edge-logo" width="32" height="32" /></a>
+      <a href="https://validator.w3.org/check?uri=referer"><img src="images/w3c.png" alt="w3c-logo" width="32" height="32" /></a>
+    </figure>
+  </footer>
+</body>
+
+</html>

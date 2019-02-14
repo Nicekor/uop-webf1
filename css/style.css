@@ -1,0 +1,402 @@
+/*default is designed for min-320width*/
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: #f1f1f1;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo {
+  display: block;
+  float: left;
+  height: 4em;
+}
+
+h1, h3 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+h1, h3, p {
+  margin: 8px;
+  /*i used px here because it's the default margin and padding*/
+  padding: 8px;
+}
+
+@media screen and (min-width:425px) {
+  nav .logo {
+    float: none;
+  }
+}
+
+@media screen and (min-width:645px) {
+  nav .logo {
+    float: left;
+    margin-right: 1em;
+  }
+}
+
+nav .dropdown-arrow {
+  vertical-align: middle;
+  display: inline;
+}
+
+nav .up-number {
+  margin: 0;
+  margin-right: 0.2em;
+  padding: 0;
+  color: gray;
+  line-height: 4rem;
+  float: right;
+}
+
+@media screen and (min-width:425px) {
+  nav .up-number {
+    margin-right: 0.6em;
+    line-height: 2rem;
+    float: right;
+  }
+}
+
+@media screen and (min-width:645px) {
+  nav .up-number {
+    margin-right: 1em;
+    line-height: 4rem;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+nav ul li {
+  border-right: 1px solid #bbb;
+  line-height: 2em;
+}
+
+@media screen and (min-width:645px) {
+  nav ul li {
+    line-height: 4em;
+  }
+}
+
+nav>ul>li {
+  float: left;
+}
+
+nav ul li:last-child {
+  border-right: none
+}
+
+nav ul li a {
+  display: block;
+  padding: 0 1em;
+  color: gray;
+}
+
+nav ul li:hover > a {
+  background-color: silver;
+}
+
+nav li.active {
+  background-color: silver;
+}
+
+/*********DROPDOWN*******/
+
+nav .dropdown {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #bbb;
+}
+
+nav .dropdown-content li {
+  border-right: none;
+  border-bottom: 1px solid #bbb;
+  position: relative;
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  float: none;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+  background-color: #b3b3b3;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*********END OF DROPDOWN*******/
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e6e6e6;
+}
+
+main #welcome p{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+}
+
+main #welcome p:last-child{
+  margin-bottom: 2em;
+}
+main .index-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .index-container img{
+  width: 32%;
+  display: inline-block;
+  height: auto;
+}
+
+@media screen and (min-width:635px) {
+  main .index-container img {
+    width: 12.19125em;
+  }
+}
+
+@media screen and (min-width:666px) {
+  main .index-container img {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+}
+
+@media screen and (min-width:928px) {
+  main .index-container img {
+    margin-right: 8%;
+    margin-left: 2%;
+  }
+}
+main .index-container .welcome-img{
+  border-radius: 8px;
+}
+main .index-container .obama-img {
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+main .index-container figcaption {
+  font-family: "Lucida Console", Monaco, monospace;
+  margin-bottom: 5em;
+}
+
+/******* LITERATURE-REVIE ********/
+
+main .lit-review {
+  display: block;
+  margin-bottom: 5em;
+}
+
+@media screen and (min-width:645px) {
+  main .lit-review {
+    margin: auto;
+    margin-bottom: 6em;
+  }
+}
+
+main .lit-review header h1 {
+  text-align: center;
+}
+
+main .lit-review p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+main .lit-review #references {
+  overflow-wrap: break-word;
+  text-align: left;
+}
+
+main .lit-review-index {
+  display: block;
+  background-color: #b3b3b3;
+  text-align: center;
+  margin: 1em;
+  padding-bottom: 0.2em;
+  border-radius: 8px;
+}
+
+@media screen and (min-width:645px) {
+  main .lit-review-index {
+    float: left;
+    width: 25%;
+  }
+}
+
+main .lit-review-index ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+main .lit-review-index li {
+  display: block;
+  border-bottom: 1px solid #c0c0c0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px;
+}
+
+main .lit-review-index li a {
+  color: #000000;
+}
+
+main .lit-review-index li:hover {
+  background-color: silver;
+}
+
+main .lit-review-index li:first-child {
+  border-top: 1px solid #c0c0c0;
+}
+
+main .lit-review-index li:last-child {
+  border-bottom: none;
+}
+
+/******* END OF LITERATURE REVIE ********/
+
+/***** DISC LOG ******/
+main .disclog {
+  display: block;
+  margin-bottom: 5em;
+}
+
+@media screen and (min-width:645px) {
+  main .disclog {
+    margin: auto;
+    margin-bottom: 6em;
+  }
+}
+
+main .disclog header h1 {
+  text-align: center;
+}
+
+main .disclog p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+main .disclog-index {
+  display: block;
+  background-color: #b3b3b3;
+  text-align: center;
+  margin: 1em;
+  padding-bottom: 0.2em;
+  border-radius: 8px;
+}
+
+@media screen and (min-width:645px) {
+  main .disclog-index {
+    float: left;
+    width: 25%;
+  }
+}
+
+main .disclog-index ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+main .disclog-index li {
+  display: block;
+  border-bottom: 1px solid #c0c0c0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2px;
+}
+
+main .disclog-index li a {
+  color: #000000;
+}
+
+main .disclog-index li:hover {
+  background-color: silver;
+}
+
+main .disclog-index li:first-child {
+  border-top: 1px solid #c0c0c0;
+}
+
+main .disclog-index li:last-child {
+  border-bottom: none;
+}
+
+/******* ABOUT ME ********/
+
+main #about-me {
+  display: block;
+}
+
+main #about-me p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+#video {
+  /* box-shadow: 0 -5px 6px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: auto;
+  height: auto;
+  width: 60%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  padding: 0;
+  text-align: center;
+}
+
+footer figure {
+  text-align: center;
+  margin: 0;
+}
+
+footer img {
+  margin-right: 4.5%;
+  margin-left: 1%;
+}

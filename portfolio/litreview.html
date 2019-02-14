@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <title>Web Foundations</title>
+  <link href="../css/style.css" rel="stylesheet" title="Default" />
+</head>
+
+<body>
+
+  <nav>
+    <a href="../index.html"><img class="logo" src="../images/logo.png" alt="uop-logo" /></a>
+    <p class="up-number">UP Number: 876126</p>
+    <ul>
+      <li> <a href="../index.html">Home</a> </li>
+      <li class="dropdown active">
+        <a href="#">
+          Portfolio <svg class="dropdown-arrow" width=1em height=1em> <image href="../images/dropdown-arrow.svg" height="1em" width="1em"/> </svg>
+        </a>
+        <ul class="dropdown-content">
+          <li class="active"><a href="../portfolio/litreview.html">Literature Review</a></li>
+          <li><a href="../portfolio/disclog.html">Discovery Log</a></li>
+        </ul>
+      </li>
+      <li> <a href="../aboutme.html">About Me</a> </li>
+    </ul>
+  </nav>
+  <main>
+    <aside class="lit-review-index">
+      <h3>Index</h3>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#info-security">Defining information security</a></li>
+        <li><a href="#cia-model">The Confidentiality, Integrity and Availability Model (CIA Model)</a></li>
+        <li><a href="#attacks">Attacks</a></li>
+        <li><a href="#usb-memories">USB Memories</a></li>
+        <li><a href="#impersonation">Impersonation</a></li>
+        <li><a href="#abuse-trust">Abuse of Trust</a></li>
+        <li><a href="#tailgating">Tailgating</a></li>
+        <li><a href="#phishing">Phishing</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </aside>
+    <article class="lit-review">
+      <header>
+        <h1>Mitigating Corporate Information Exposure on the Web</h1>
+      </header>
+      <section id="introduction">
+        <h3>Introduction</h3>
+        <p>
+          A clear understanding of how the authors of research define information security, including theft of information, is fundamental to mitigate corporate information exposure on the web. This literature review covers some of the security weaknesses, associated
+          with corporate information, and explores some of the issues that researchers raise on this matter. The effort to define “information security” generates extensive literature, due primarily to the evolving understanding of the concept itself
+          and the complexity it encompasses.
+        </p>
+      </section>
+      <section id="info-security">
+        <h3>Defining information security</h3>
+        <p>
+          Andress & Rogers (2011, p. 20) claimed that much of the personal and corporate information are stored in systems and if this information is exposed to an attacker, the consequences can be terrible. Andress & Rogers (2011, p. 20) also argued that corporations
+          can lose millions of dollars, deal with legal processes and lose their reputation due to a system configuration issue, allowing an attacker to gain access to a database that contains personally or corporate information. We witness these events
+          regularly in the media. According to Andress & Rogers (2011, p. 16) information security is essential in an era which data from a large number of people and companies are stored in a diversity of computer systems, often not under direct control.
+          Security and productivity are opposing concepts, and, saying that people are completely secure is a difficult task. As reported by the U.S. law, information security is defined as: “protecting information and information systems from unauthorized
+          access, use, disclosure, disruption, modification, or destruction”. Basically, it means that we want to protect our data and systems from those who want to use them.
+        </p>
+      </section>
+      <section id="cia-model">
+        <h3>The Confidentiality, Integrity and Availability Model
+  (CIA Model)</h3>
+        <p>
+          Andress & Rogers (2011, p. 23) stated that the CIA triad focuses heavily on data security and for this reason it is easier to understand security concepts. These are the three primary concepts in information security: Confidentiality, Integrity and Availability.
+          Andress & Rogers (2011, p. 23) also highlighted that confidentiality is a familiar concept, however, it should be known that it does not mean privacy. Bourke & Wessely (2008, p.888) point out that confidentiality, in the medical environment,
+          is an integrant of privacy and refers to the duty of keeping secure and secret from others, information given by or about an individual. Killinger (2010, p.18) defined integrity as a commitment of being honest and to honor moral, ethical, spiritual,
+          and artistic values and principles. Killinger (2010, p.18) added that there is no integrity in saying one thing and doing another. In short, integrity refers to the ability to prevent data from being modified or deleted without authorization.This
+          is very important because if an attacker altered the data of a patient's treatment process this could lead to his death. (Andress & Rogers, 2011, pp. 24,25). Andress & Rogers (2011, p. 25) defined availability as the power to access data when
+          needed. Loss of availability can have several consequences such as: power loss, OS or software problems, network attacks. When these problems happen due to attacks by an outside party, such as hackers, they are called as a Denial of Service
+          (DoS) attack.
+        </p>
+      </section>
+      <section id="attacks">
+        <h3>Attacks</h3>
+        <p>
+          You, Lenzini, Ogiela, & Bertino (2012, pp. 831-833) stated that because of the dangers associated with unauthorized accesses coming from insiders it is necessary to develop an integral security management system that is able to protect, internally and
+          externally, a company's major information assets. Internally, with the use of firewalls, protocols, encryptions and authorizations; and externally, with the training of employees. On the other hand, Mitnick (2002, p.12) advocated that even if
+          a company has the best security technologies and trained their staff to a maximum level, the company is still vulnerable. Mitnick (2002, p.12) justified this argument saying that the human factor is the greatest weakness of security.
+        </p>
+      </section>
+      <section id="usb-memories">
+        <h3>USB Memories</h3>
+        <p>
+          A special issue in the information security is the use of USB Memories. Lee, Yim, & Spafford (2012) explained that these storage devices, besides being useful and easy to carry information, often personal and corporate information, are easily accessible
+          because they are easy to steal, and once they are lost or stolen, their content can be hacked. But Lee, Yim, & Spafford (2012) also argued that this information can be protected, encrypting it and using authentication protocols.
+        </p>
+      </section>
+      <section id="impersonation">
+        <h3>Impersonation</h3>
+        <p>
+          Mitnick (2002, pp.12,13) argued that most of the successful attacks are not due to the complexity of security, but to the error of the human or simply to his ignorance about good security practices. For example, passwords can be obtained if the attacker
+          pretends to be someone else and simply asks for them. Mitnick (2002, pp.12,13) also stated that anyone who thinks that only security products like firewalls, intrusion detection systems, or stronger authentication devices provide absolute security
+          are settling for the illusion of security.
+        </p>
+      </section>
+      <section id="abuse-trust">
+        <h3>Abuse of Trust</h3>
+        <p>
+          Mitnick (2002, pp.16,17) stated that in most of the cases, attackers have great social skills with people; they convey solidarity and friendship so a quick trust can be established and most of our secret and sensitive information are related to our tastes,
+          experiences, stories and our life, therefore it is easy for the attacker to get them.
+        </p>
+      </section>
+      <section id="tailgating">
+        <h3>Tailgating</h3>
+        <p>
+          Long et al. (2008) defined tailgating as the act of following a person, and being attentive to all the steps that he does, such as places he frequents and schedules. This is one of the best non techno techniques of the attacker, to access a secure building
+          and steal information. It may, also, or may not, be related to the abuse of trust. Long et al. (2008) asserted that no one should be careless when entering a secure location.
+        </p>
+      </section>
+      <section id="phishing">
+        <h3>Phishing</h3>
+        <p>
+          Dhamija, Tygar, & Hearst (2006) stated that, usually, fake websites are created that are very similar to the real ones, thus deceiving the user who thinks he is in the real one, and ends up giving his data to the attacker without realizing it. Dhamija,
+          Tygar, & Hearst (2006) also argued that many users suffer from this attack because they have lack knowledge about it. Therefore, the main defense to take is distinguishing legitimate websites. For example, an important factor that the user should
+          be aware of in these cases is to check if the address bar contains "https" where the "s" means secure, another is to pay attention to the page design that usually has some faults compared to the true one.
+        </p>
+      </section>
+      <section id="conclusion">
+        <h3>Conclusion</h3>
+        <p>
+          This literature review has summarized recent discussion from research about what constitutes a useful definition of web security and how to mitigate the corporate information exposure on the web. Determining what is and is not secure is important, in
+          summary, being completely secure on the internet and not exposing information is a difficult task, but there are steps that can be taken to get close to it if we acquire more and more knowledge of the forms of attack. The research has highlighted
+          that the human factor is the greatest weakness of security.
+        </p>
+      </section>
+      <section id="references">
+        <h3>References</h3>
+        <ul>
+          <li>Andress, J., & Rogers, R. (2011). <cite>The Basics of Information Security.</cite> Elsevier Inc. <a href="https://doi.org/10.1016/C2010-0-68336-2">https://doi.org/10.1016/C2010-0-68336-2</a></li>
+
+          <li>Bourke, J., & Wessely, S. (2008). <cite>Confidentiality. BMJ (Clinical Research Ed.)</cite>, 336(7649), 888–91. <a href="https://doi.org/10.1136/bmj.39521.357731.BE">https://doi.org/10.1136/bmj.39521.357731.BE</a></li>
+
+          <li>Dhamija, R., Tygar, J. D., & Hearst, M. (2006). Why phishing works. In <cite>Proceedings of the SIGCHI conference on Human Factors in computing systems - CHI ’06</cite>(p.581). New York, New York, USA: ACM Press. <a href="https://doi.org/10.1145/1124772.1124861">https://doi.org/10.1145/1124772.1124861</a></li>
+
+          <li>Killinger, B. (2007). <cite>Integrity: Doing the right thing for the right reason.</cite> Montreal: McGill-Queen's University Press.</li>
+
+          <li>Lee, K., Yim, K., & Spafford, E. H. (2012). Reverse-safe authentication protocol for secure USB memories. <cite>Security and Communication Networks, 5</cite>(8), 834–845. <a href="https://doi.org/10.1002/sec.580">https://doi.org/10.1002/sec.580</a></li>
+
+          <li>Long, J., Pinzon, S., Wiles, J., Mitnick, K. D., Long, J., Pinzon, S., ... Mitnick, K. D. (2008). Chapter 2 – Tailgating. In <cite>No Tech Hacking</cite>(pp. 13–26). <a href="https://doi.org/10.1016/B978-1-59749-215-7.00002-0">https://doi.org/10.1016/B978-1-59749-215-7.00002-0</a></li>
+
+          <li>Mitnick, K. (2002). The Art of Deception. <cite>Current Opinion in Neurobiology</cite>, 352. <a href="https://doi.org/10.1300/J114v10n01_07">https://doi.org/10.1300/J114v10n01_07</a></li>
+
+          <li>Savage, N. (2017). <cite>Information & Social Engineering</cite> [PowerPoint slides]. Retrieved from <a href="https://docs.google.com/presentation/d/1nBOjWL9UyM03mx4GQzUWoqUQRmurVOQVhEVhy_EeLtQ/edit#slide=id.p">https://docs.google.com/presentation/d/1nBOjWL9UyM03mx4GQzUWoqUQRmurVOQVhEVhy_EeLtQ/edit#slide=id.p</a></li>
+
+          <li>You I., Lenzini G., Ogiela M., Bertino E. (2012). <cite>Security and Communication Networks, vol. 5(8)</cite>, 831-833 <a href="https://doi.org/10.1002/sec.598">https://doi.org/10.1002/sec.598</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>Try other browser and/or validate this page!</p>
+    <figure>
+      <a href="https://www.mozilla.org/en-US/firefox/"><img src="../images/firefox.png" alt="firefox-logo" width="32" height="32" /></a>
+      <a href="https://www.google.com/chrome/"><img src="../images/chrome.png" alt="chrome-logo" width="32" height="32" /></a>
+      <a href="https://www.opera.com/"><img src="../images/opera.png" alt="opera-logo" width="32" height="32" /></a>
+      <a href="https://www.apple.com/safari/"><img src="../images/safari.png" alt="safari-logo" width="32" height="32" /></a>
+      <a href="https://www.microsoft.com/en-us/windows/microsoft-edge"><img src="../images/microsoft-edge.png" alt="microsoft-edge-logo" width="32" height="32" /></a>
+      <a href="https://validator.w3.org/check?uri=referer"><img src="../images/w3c.png" alt="w3c-logo" width="32" height="32" /></a>
+    </figure>
+  </footer>
+
+</body>
+
+</html>
